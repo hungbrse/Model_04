@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      fieldset {
+        width: 500px;
+      }
+      form {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="file"],
+      textarea {
+        padding: 10px 0px;
+      }
+
+      button {
+        width: 50px;
+        background-color: black;
+        cursor: pointer;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Tuyen Dung</h1>
+      <fieldset>
+        <form action="">
+          <label for="name">Ho va Ten</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+
+          <label for="phone">so dien thoai</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="cv">Cv</label>
+          <input type="file" id="cv" name="cv" />
+
+          <label for="messenge">Tin Nhan</label>
+          <textarea name="messenge" id="messenge"></textarea>
+
+          <button>Gui</button>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>

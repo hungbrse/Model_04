@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .flex-container {
+        color: aliceblue;
+        background-color: black;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+      }
+
+      ul {
+        display: flex;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        margin: 0px 20px;
+        color: aliceblue;
+      }
+
+      h1 {
+        margin-left: 10px;
+      }
+
+      form {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      input[type="number"] {
+        padding: 10px 0px;
+        margin: 5px 0px;
+      }
+
+      button {
+        width: 100px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+
+      .div-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      footer {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1>Hotel Search</h1>
+
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="div-form">
+      <h2>Find the perfect hotel for you</h2>
+      <form action="">
+        <label for="distination">Distination</label>
+        <input type="text" name="distination" id="distination" />
+        <label for="checkIn">Check In</label>
+        <input type="date" id="checkIn" name="checkIn" />
+        <label for="checkOut">checkOut</label>
+        <input type="date" name="checkOut" id="checkOut" />
+        <label for="guest">Guest</label>
+        <input type="number" name="guest" id="guest" min="1" max="10" />
+        <button>Search</button>
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy;2023 Hotel search all right</p>
+    </footer>
+  </body>
+</html>
